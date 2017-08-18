@@ -1,8 +1,8 @@
 function isLogin(){
 		// let input_username= document.querySelector('#usernname');
 		// let input_username = document.querySelector('#password');
-		let inname = document.querySelector('#name').value;
-        let inpassword = document.querySelector('#password').value;
+		let inname = document.querySelector('#txtName').value;
+        let inpassword = document.querySelector('#txtPass').value;
 		let account = JSON.parse(localStorage.getItem("user"));
 		let html=``;
 		console.log(account);
