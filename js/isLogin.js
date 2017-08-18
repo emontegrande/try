@@ -1,8 +1,8 @@
 function isLogin(){
 		// let input_username= document.querySelector('#usernname');
 		// let input_username = document.querySelector('#password');
-		let input_username = document.querySelector('#username').value;
-		let input_password= document.querySelector('#password').value;
+		let inname = document.querySelector('#txtName').value;
+        let inpassword = document.querySelector('#txtPass').value;
 		let account = JSON.parse(localStorage.getItem("user"));
 		let html=``;
 		console.log(account);
@@ -18,10 +18,15 @@ function isLogin(){
 		// 	alert("Error");
 			
 		// });
+	try{
 		for(var i = 0; i < account.length; i++){
-  			if(account[i].username == input_username && account[i].password == input_password){
-    			console.log(account[i].username);
-    			console.log(account[i].password);
+			if(account == null){
+					alert("Invalid Username or Password");
+				}
+
+  			else if(account[i].txtName == inname && account[i].txtPass == inpassword){
+    			console.log(account[i].txtNname);
+    			console.log(account[i].txtPassword);
     			window.open("/users");
     			break;
 			}
@@ -33,4 +38,7 @@ function isLogin(){
   			
 		}
 		
+	}
+	catch()TypeError){
+		alert("Invalid username or password!")
 }
