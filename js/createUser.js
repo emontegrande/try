@@ -36,6 +36,7 @@
                 console.log("Name is " + jns_retrieve[0].name);
                 console.log("Password is " + jns_retrieve[0].password);
             }*/
+              // localStorage.clear();
             }
 
                 /*let html = `
