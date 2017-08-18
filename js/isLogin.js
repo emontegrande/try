@@ -25,7 +25,7 @@ function isLogin(){
 				}
 
   			else if(account[i].txtName == inname && account[i].txtPass == inpassword){
-    			console.log(account[i].txtNname);
+    			console.log(account[i].txtName);
     			console.log(account[i].txtPassword);
     			window.open("/profile");
     			break;
@@ -39,6 +39,6 @@ function isLogin(){
 		}
 		
 	}
-	catch()TypeError){
+	catch(TypeError){
 		alert("Invalid username or password!")
 }
