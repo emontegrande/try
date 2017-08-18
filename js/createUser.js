@@ -1,10 +1,4 @@
-            let user = [{
-                name: "Clyde",
-                password: "1234"
-              },{
-                name: "Chester",
-                password: "12345"
-              }];
+            let user = [];
             try{
               let tempo=JSON.parse(localStorage.getItem("user"));
               tempo.map((account)=>{
