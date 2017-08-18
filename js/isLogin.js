@@ -27,7 +27,7 @@ function isLogin(){
   			else if(account[i].txtName == inname && account[i].txtPass == inpassword){
     			console.log(account[i].txtNname);
     			console.log(account[i].txtPassword);
-    			window.open("/users");
+    			window.open("/");
     			break;
 			}
 
