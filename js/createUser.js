@@ -1,10 +1,4 @@
-            let user = [{
-                name: "Clyde",
-                password: "1234"
-              },{
-                name: "Chester",
-                password: "12345"
-              }];
+            let user = [];
             try{
               let tempo=JSON.parse(localStorage.getItem("user"));
               tempo.map((account)=>{
@@ -27,7 +21,7 @@
 
                 localStorage.setItem('user',JSON.stringify(user));
 
-                console.log(user);
+                /*console.log(user);
                 let jns = JSON.stringify(user);
                 localStorage.setItem('user',jns); 
 
@@ -41,8 +35,8 @@
 
                 console.log("Name is " + jns_retrieve[0].name);
                 console.log("Password is " + jns_retrieve[0].password);
-            }
-              
+            }*/
+
             }
 
                 /*let html = `
