@@ -10,7 +10,7 @@
                           <tr>
                             <td>${name.name}</td>
                             <td>${name.password}</td>
-                            <td><img src="http://lorempixel.com/100/100/people/"></td>
+                            <td><img src="http://lorempixel.com/50/50/people/"></td>
                           </tr>
                           `;    
                         });
